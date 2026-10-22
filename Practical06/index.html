@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderGo Travels - Asynchronous Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header Navbar -->
+    <header class="navbar">
+      <div class="brand">
+        <i class="fa-solid fa-plane-departure logo"></i>
+        <h1>WanderGo Travels</h1>
+      </div>
+      <div class="actions">
+        <span id="sessionStatus" class="session-badge">Session: Active</span>
+        <button id="themeToggle" class="btn-theme"><i class="fa-solid fa-moon"></i> Theme</button>
+      </div>
+    </header>
+
+    <!-- Asynchronous Promotional Banner (Timers) -->
+    <div id="promoBanner" class="promo-banner">
+      <i class="fa-solid fa-fire"></i>
+      <span id="promoText">Loading limited time offers...</span>
+      <span id="timerCountdown" class="countdown">10s</span>
+    </div>
+
+    <!-- Controls / Filter Card -->
+    <div class="controls-card">
+      <div class="filter-group">
+        <label for="categoryFilter"><i class="fa-solid fa-filter"></i> Category:</label>
+        <select id="categoryFilter">
+          <option value="All">All Categories</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Relaxation">Relaxation</option>
+          <option value="Culture">Culture</option>
+        </select>
+      </div>
+      <button id="fetchPackagesBtn" class="btn-primary">
+        <i class="fa-solid fa-arrows-rotate"></i> Reload Packages
+      </button>
+    </div>
+
+    <!-- Status & Loading Indicator -->
+    <div id="loadingSpinner" class="spinner hidden">
+      <i class="fa-solid fa-circle-notch fa-spin"></i> Fetching travel deals...
+    </div>
+    <div id="errorMessage" class="error-msg"></div>
+
+    <!-- Dynamic Packages Container -->
+    <main>
+      <h2 class="section-title">Featured Tour Packages</h2>
+      <div id="packagesContainer" class="packages-grid"></div>
+    </main>
+
+    <!-- Bookmarked Preferences (LocalStorage) -->
+    <section class="bookmarks-section">
+      <h3><i class="fa-solid fa-heart"></i> Saved Favorites (Local Storage)</h3>
+      <ul id="savedList" class="saved-list">
+        <li class="empty-msg">No saved packages yet. Click the heart icon on any deal!</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

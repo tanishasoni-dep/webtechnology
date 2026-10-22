@@ -1,0 +1,25 @@
+{
+  "name": "webtechnology",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanishasoni-dep/webtechnology.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tanishasoni-dep/webtechnology/issues"
+  },
+  "homepage": "https://github.com/tanishasoni-dep/webtechnology#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "express-session": "^1.19.0"
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Manali Heights",
+    "category": "Adventure",
+    "price": "₹14,999",
+    "duration": "5 Days / 4 Nights",
+    "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Goa Beach Resort",
+    "category": "Relaxation",
+    "price": "₹18,500",
+    "duration": "4 Days / 3 Nights",
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Jaipur Royal Heritage",
+    "category": "Culture",
+    "price": "₹12,000",
+    "duration": "3 Days / 2 Nights",
+    "image": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=500&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Kerala Backwaters",
+    "category": "Relaxation",
+    "price": "₹22,000",
+    "duration": "6 Days / 5 Nights",
+    "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=80"
+  }
+]

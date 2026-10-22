@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase Online Store</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="navbar">
+      <h1 id="title"><i class="fa-solid fa-bag-shopping"></i> ShopEase</h1>
+      <button id="themeBtn" class="theme-toggle"><i class="fa-solid fa-moon"></i> Theme</button>
+    </header>
+
+    <main class="main-content">
+      <div class="banner-wrapper">
+        <img src="banner.png" id="productImage" alt="Banner Image">
+      </div>
+
+      <div class="controls-card">
+        <h2>Manage Products</h2>
+        
+        <div class="input-group">
+          <input type="text" id="productName" placeholder="Enter Product Name..." autocomplete="off">
+          <div class="button-group">
+            <button id="addBtn" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Product</button>
+            <button id="removeBtn" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Remove Last</button>
+          </div>
+        </div>
+
+        <p id="message" class="live-status"></p>
+      </div>
+
+      <div class="products-card">
+        <h3>Product Catalog</h3>
+        <ul id="productList">
+          <li>Mobile <button class="delete-item-btn" onclick="removeItem(this)"><i class="fa-solid fa-xmark"></i></button></li>
+          <li>Laptop <button class="delete-item-btn" onclick="removeItem(this)"><i class="fa-solid fa-xmark"></i></button></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
