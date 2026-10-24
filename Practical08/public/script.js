@@ -1,4 +1,4 @@
-const form =
+0const form =
     document.getElementById("productForm");
 
 const productId =
